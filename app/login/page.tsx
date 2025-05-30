@@ -18,6 +18,7 @@ export default function LoginPage() {
     rememberMe: false,
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
+  const [showSuccess, setShowSuccess] = useState(false)
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {}
@@ -42,7 +43,10 @@ export default function LoginPage() {
     e.preventDefault()
     if (validateForm()) {
       console.log("Login attempt:", formData)
-      // Handle login logic here
+      setShowSuccess(true)
+      setTimeout(() => {
+        window.location.href = "/"
+      }, 2000)
     }
   }
 
@@ -50,7 +54,7 @@ export default function LoginPage() {
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex items-center justify-center py-12 px-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <Image src="/sisal-logo.png" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
+          <Image src="/sisal-logo.svg" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
           <CardTitle className="text-2xl font-bold text-green-700">Accedi al tuo Account</CardTitle>
           <p className="text-gray-600">Accedi per giocare a VinciCasa</p>
         </CardHeader>
@@ -97,10 +101,7 @@ export default function LoginPage() {
               Accedi
             </Button>
 
-            <div className="text-center space-y-2">
-              <Link href="/forgot-password" className="text-sm text-green-600 hover:underline">
-                Password dimenticata?
-              </Link>
+            <div className="text-center">
               <p className="text-sm text-gray-600">
                 Non hai un account?{" "}
                 <Link href="/register" className="text-green-600 hover:underline font-semibold">
@@ -111,6 +112,15 @@ export default function LoginPage() {
           </form>
         </CardContent>
       </Card>
+      {showSuccess && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-8 max-w-md mx-4 text-center">
+            <div className="text-green-600 text-6xl mb-4">✓</div>
+            <h3 className="text-2xl font-bold text-green-700 mb-2">Accesso Riuscito!</h3>
+            <p className="text-gray-600 mb-4">Benvenuto in VinciCasa. Verrai reindirizzato alla homepage...</p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

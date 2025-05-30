@@ -36,6 +36,7 @@ export default function RegisterPage() {
   })
 
   const [errors, setErrors] = useState<Record<string, string>>({})
+  const [showSuccess, setShowSuccess] = useState(false)
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {}
@@ -95,7 +96,10 @@ export default function RegisterPage() {
     e.preventDefault()
     if (validateForm()) {
       console.log("Registration attempt:", formData)
-      // Handle registration logic here
+      setShowSuccess(true)
+      setTimeout(() => {
+        window.location.href = "/"
+      }, 2000)
     }
   }
 
@@ -104,7 +108,7 @@ export default function RegisterPage() {
       <div className="max-w-2xl mx-auto">
         <Card>
           <CardHeader className="text-center">
-            <Image src="/sisal-logo.png" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
+            <Image src="/sisal-logo.svg" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
             <CardTitle className="text-2xl font-bold text-green-700">Registrazione</CardTitle>
             <p className="text-gray-600">
               Unisciti a migliaia di vincitori e inizia il tuo viaggio nella lotteria oggi
@@ -417,6 +421,17 @@ export default function RegisterPage() {
           </CardContent>
         </Card>
       </div>
+      {showSuccess && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-8 max-w-md mx-4 text-center">
+            <div className="text-green-600 text-6xl mb-4">✓</div>
+            <h3 className="text-2xl font-bold text-green-700 mb-2">Registrazione Completata!</h3>
+            <p className="text-gray-600 mb-4">
+              Il tuo account è stato creato con successo. Verrai reindirizzato alla homepage...
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
