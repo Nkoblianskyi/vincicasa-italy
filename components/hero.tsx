@@ -48,11 +48,11 @@ export function Hero() {
           className="mb-8"
         >
           <Image
-            src="/sisal-logo.svg"
+            src="/sisal-logo.png"
             alt="Sisal Logo"
             width={200}
             height={65}
-            className="mx-auto mb-4 brightness-0 invert"
+            className="mx-auto mb-4"
           />
           <motion.h1
             initial={{ scale: 0.9 }}
@@ -139,7 +139,7 @@ export function Hero() {
 
           <motion.div whileHover={{ scale: 1.03 }} className="bg-yellow-400 text-black rounded-lg p-4 mb-6">
             <div className="flex items-center justify-center gap-2 mb-2">
-              <Image src="/sisal-logo.svg" alt="VinciCasa" width={80} height={26} />
+              <Image src="/sisal-logo.png" alt="VinciCasa" width={80} height={26} />
             </div>
             <p className="text-2xl font-bold">
               Premio in palio: <span className="text-red-600">500.000€</span>

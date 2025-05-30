@@ -8,13 +8,12 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <Image
-              src="/sisal-logo.svg"
+              src="/sisal-logo.png"
               alt="Sisal Logo"
               width={120}
               height={38}
-              className="mb-4 brightness-0 invert"
+              className="mb-4 "
             />
-            <h3 className="text-xl font-bold text-green-400 mb-2">VinciCasa</h3>
             <p className="text-gray-300 text-sm">Il gioco del Lotto che ti permette di vincere una casa ogni giorno.</p>
           </div>
 
@@ -24,14 +23,13 @@ export function Footer() {
               <p className="text-gray-300">Gioca responsabilmente</p>
               <p className="text-gray-300">Se hai bisogno di aiuto:</p>
 
-              <div className="grid grid-cols-4 gap-2 mt-4">
+              <div className="flex flex-row items-center gap-2 mt-4">
                 <Link href="https://www.adm.gov.it/portale/" className="block">
                   <Image
                     src="/adm.svg"
                     alt="ADM"
                     width={60}
                     height={30}
-                    className="brightness-0 invert hover:brightness-75"
                   />
                 </Link>
                 <Link href="https://www.adm.gov.it/portale/" className="block">
@@ -40,16 +38,16 @@ export function Footer() {
                     alt="ADM"
                     width={60}
                     height={30}
-                    className="brightness-0 invert hover:brightness-75"
+
                   />
                 </Link>
                 <Link href="https://www.giochinumerici.info/gioca-il-giusto" className="block">
                   <Image
                     src="/responsabili.svg"
                     alt="Gioca il Giusto"
-                    width={60}
-                    height={30}
-                    className="brightness-0 invert hover:brightness-75"
+                    width={120}
+                    height={60}
+
                   />
                 </Link>
                 <Image
@@ -57,7 +55,6 @@ export function Footer() {
                   alt="18+"
                   width={60}
                   height={30}
-                  className="brightness-0 invert hover:brightness-75"
                 />
               </div>
             </div>

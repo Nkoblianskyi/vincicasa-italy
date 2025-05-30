@@ -71,7 +71,7 @@ export default function ReviewsPage() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <Image src="/sisal-logo.svg" alt="VinciCasa Logo" width={150} height={48} className="mx-auto mb-6" />
+          <Image src="/sisal-logo.png" alt="VinciCasa Logo" width={150} height={48} className="mx-auto mb-6" />
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Recensioni dei <span className="text-green-600">Vincitori VinciCasa</span>
           </h1>

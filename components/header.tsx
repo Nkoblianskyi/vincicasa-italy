@@ -15,8 +15,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/sisal-logo.svg" alt="Sisal Logo" width={100} height={32} />
-            <span className="text-xl font-bold text-green-600">VinciCasa</span>
+            <Image src="/sisal-logo.png" alt="Sisal Logo" width={124} height={64} />
           </Link>
 
           {/* Desktop Navigation */}

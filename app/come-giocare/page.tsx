@@ -64,7 +64,7 @@ export default function ComeGiocarePage() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <Image src="/sisal-logo.svg" alt="VinciCasa Logo" width={150} height={48} className="mx-auto mb-6" />
+          <Image src="/sisal-logo.png" alt="VinciCasa Logo" width={150} height={48} className="mx-auto mb-6" />
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Come Giocare a <span className="text-green-600">VinciCasa</span>
           </h1>
@@ -128,7 +128,7 @@ export default function ComeGiocarePage() {
           <div className="bg-white rounded-lg shadow-lg p-8 border border-green-200">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <Image src="/sisal-logo.svg" alt="VinciCasa Logo" width={200} height={65} className="mx-auto" />
+                <Image src="/sisal-logo.png" alt="VinciCasa Logo" width={200} height={65} className="mx-auto" />
               </div>
               <div className="md:w-1/2">
                 <h3 className="text-2xl font-bold text-green-700 mb-4">Premio da 500.000€</h3>

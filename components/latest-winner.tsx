@@ -28,7 +28,7 @@ export function LatestWinner() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <Image src="/sisal-logo.svg" alt="VinciCasa Logo" width={150} height={48} className="mx-auto mb-6" />
+          <Image src="/sisal-logo.png" alt="VinciCasa Logo" width={150} height={48} className="mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             🎉 Ultimo <span className="text-green-600">Vincitore VinciCasa</span>
           </h2>
@@ -54,7 +54,7 @@ export function LatestWinner() {
                   transition={{ delay: 0.3, duration: 0.8 }}
                   className="lg:w-1/3 text-center"
                 >
-                  <Image src="/sisal-logo.svg" alt="VinciCasa by Sisal" width={180} height={58} className="mx-auto" />
+                  <Image src="/sisal-logo.png" alt="VinciCasa by Sisal" width={180} height={58} className="mx-auto" />
                 </motion.div>
 
                 {/* Winner Info */}

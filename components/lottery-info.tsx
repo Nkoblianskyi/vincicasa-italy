@@ -119,7 +119,7 @@ export function LotteryInfo() {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="md:w-1/3"
             >
-              <Image src="/sisal-logo.svg" alt="Sisal Logo" width={200} height={65} className="mx-auto" />
+              <Image src="/sisal-logo.png" alt="Sisal Logo" width={200} height={65} className="mx-auto" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -191,7 +191,7 @@ export function LotteryInfo() {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="md:w-1/3"
             >
-              <Image src="/sisal-logo.svg" alt="Sisal Logo" width={180} height={60} className="mx-auto" />
+              <Image src="/sisal-logo.png" alt="Sisal Logo" width={180} height={60} className="mx-auto" />
             </motion.div>
             <div className="md:w-2/3">
               <h3 className="text-3xl font-bold text-green-700 mb-4">Come Funziona VinciCasa</h3>
@@ -252,7 +252,7 @@ export function LotteryInfo() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-center"
         >
-          <Image src="/sisal-logo.svg" alt="VinciCasa by Sisal" width={150} height={48} className="mx-auto mb-4" />
+          <Image src="/sisal-logo.png" alt="VinciCasa by Sisal" width={150} height={48} className="mx-auto mb-4" />
           <p className="text-lg text-gray-600">
             <strong>VinciCasa</strong> - Il gioco che può cambiare la tua vita ogni giorno
           </p>
