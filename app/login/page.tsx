@@ -54,7 +54,7 @@ export default function LoginPage() {
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex items-center justify-center py-12 px-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <Image src="/sisal-logo.svg" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
+          <Image src="/sisal-logo.png" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
           <CardTitle className="text-2xl font-bold text-green-700">Accedi al tuo Account</CardTitle>
           <p className="text-gray-600">Accedi per giocare a VinciCasa</p>
         </CardHeader>

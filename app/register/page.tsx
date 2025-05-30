@@ -108,7 +108,7 @@ export default function RegisterPage() {
       <div className="max-w-2xl mx-auto">
         <Card>
           <CardHeader className="text-center">
-            <Image src="/sisal-logo.svg" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
+            <Image src="/sisal-logo.png" alt="Sisal Logo" width={120} height={38} className="mx-auto mb-4" />
             <CardTitle className="text-2xl font-bold text-green-700">Registrazione</CardTitle>
             <p className="text-gray-600">
               Unisciti a migliaia di vincitori e inizia il tuo viaggio nella lotteria oggi
